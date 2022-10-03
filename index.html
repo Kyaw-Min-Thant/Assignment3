@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    
+    <p id="randomNumber" ></p>
+    <button id="b" onclick="random();">Random Number</button>
+
+
+</body>
+
+<script>
+
+    function random () {
+        document.getElementById('randomNumber').innerHTML= Math.floor(Math.random() * 100);
+    }
+
+</script>
+
+<style>
+    
+    #randomNumber {
+        font-size: larger;
+        color: cyan;
+        font-style: italic;
+    }
+
+    #b {
+        font-size: medium;
+        color: brown;
+        font-style: oblique;
+    }
+</style>
+
+</html>
